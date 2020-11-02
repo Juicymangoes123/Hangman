@@ -6,4 +6,4 @@ DEPS= Hangman.hpp
 	$(CXX) -c -o $@ $< $(CFLAGS)
 
 hangman: Hangman.o
-	$(CXX) -o hangman hangman.o
+	$(CXX) -o hangman Hangman.o
