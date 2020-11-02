@@ -31,6 +31,9 @@
 *.out
 *.app
 
+# Hangman executable
+hangman
+
 # Vim backups
 *.un~
 makefile~
