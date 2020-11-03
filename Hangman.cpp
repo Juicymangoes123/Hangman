@@ -59,6 +59,7 @@ void print(std::vector<char> vect) {
     random_device rd;
     mt19937 mt(rd());
     uniform_int_distribution<int> dist(1, 49);
+
 int main() {
     std::cout << "Would you like to play a game of hangman? [y/n]\n";
     std::string answer;
@@ -85,7 +86,6 @@ int main() {
     int rand_int = dist(mt);
     std::string word = words[rand_int];
     word[0] = tolower(word[0]);
-    std::cout << "This is the word I have chosen!: " << word << "\n";
     std::cout << "I have chosen my word. Let's play!\n";
     std::cout << "** HANGMAN **\n";
     std::cout << "*************\n";
