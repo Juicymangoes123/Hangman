@@ -1,9 +1,11 @@
-CXX=g++
-CFLAGS=-std=c++14 -O2 -Wall
-DEPS= Hangman.hpp
+CXX = g++
+CPPFLAGS = -std=c++14 -O2 -Wall
+DEPS = Hangman.hpp
 
 %.o: %.c $(DEPS)
-	$(CXX) -c -o $@ $< $(CFLAGS)
+	$(CXX) -c -o $@ $< $(CPPFLAGS)
 
 hangman: Hangman.o
 	$(CXX) -o hangman Hangman.o
+clean:
+	rm -f *.o
