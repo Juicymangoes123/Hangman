@@ -1,5 +1,5 @@
 CXX = g++
-CPPFLAGS = -std=c++14 -O2 -Wall
+CPPFLAGS = -std=c++14 -O2 -Wall -pedantic
 DEPS = Hangman.hpp
 
 %.o: %.c $(DEPS)
